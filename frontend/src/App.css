@@ -1,0 +1,225 @@
+.app-container {
+  display: flex;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+.sidebar {
+  width: 250px;
+  height: 100vh;
+  background-color: #f4f4f4;
+  padding: 15px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar h2 {
+  margin-bottom: 15px;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar li {
+  margin-bottom: 10px;
+}
+
+.sidebar button {
+  width: 100%;
+  padding: 10px;
+  background-color: #2ba669;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: left;
+  transition: background-color 0.3s ease;
+}
+
+.sidebar button:hover {
+  background-color: #18814d;
+}
+
+.content {
+  flex-grow: 1;
+  padding: 20px;
+}
+
+.main {
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse; 
+  margin: 20px 0;
+  font-size: 16px;
+  text-align: left;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+table th, table td {
+  padding: 12px;
+  border: 1px solid #ddd;
+}
+
+table th {
+  background-color: #a52a2a;
+  color: white;
+  text-align: left;
+}
+
+table td {
+  background-color: #f9f9f9;
+}
+
+table tr:hover {
+  background-color: #f1f1f1;
+}
+
+.table-actions {
+  display: flex;
+  justify-content: space-around;
+}
+
+.table-actions button {
+  padding: 8px 12px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.table-actions button:hover {
+  background-color: #0056b3;
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  width: 100%;
+  max-width: 400px;
+}
+
+.modal select {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  background-color: #fff;
+  color: #333;
+  appearance: none;
+  cursor: pointer;
+  margin-top: 1rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 14px;
+}
+
+.modal select:hover,
+.modal select:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  outline: none;
+}
+
+.modal option {
+  padding: 0.5rem;
+  background-color: #fff;
+  color: #333;
+}
+
+.modal textarea {
+  padding: 0.8rem 1rem; 
+  border: 1px solid #ccc; 
+  border-radius: 4px; 
+  font-size: 1rem; 
+  background-color: #fff; 
+  color: #333;
+  resize: vertical; 
+  margin-top: 1rem; 
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 14px;
+  margin-top: 3px;
+}
+
+.modal textarea:hover, 
+.modal textarea:focus {
+  border-color: #007bff; 
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); 
+  outline: none;
+}
+
+.modal form {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal label {
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.modal input {
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.button-group {
+  gap: 0.5rem;
+  margin-top: 1rem; 
+}
+
+.modal button {
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 2  0px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  color: white;
+}
+
+.cancel-btn {
+  background-color: #dc3545;
+  width: 190px;
+}
+
+.cancel-btn:hover {
+  background-color: #c82333; 
+}
+
+.update-btn {
+  background-color: #28a745; 
+  width: 190px;
+  float: right;
+}
+
+.update-btn:hover {
+  background-color: #218838; 
+} 
+
+h1.UserNavigator {
+  color: #238eff; 
+  text-align: center;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
